@@ -1,1 +1,1 @@
-#Yugantar Life
+# my-yugantar-store

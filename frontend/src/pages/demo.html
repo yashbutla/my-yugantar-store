@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Full-Width Mega Menu</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 ">
+            <div class="flex justify-between h-16 items-center relative">
+
+                <!-- Desktop Menu -->
+                <div class="w-full hidden md:flex justify-between">
+
+                    <div class="group">
+
+                        <button class="text-gray-700 hover:text-blue-600 font-medium">Yoga and Exercise</button>
+
+                        <!-- Full-Width Mega Menu -->
+                        <div
+                            class="absolute left-0 top-full w-full bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="max-w-7xl mx-auto px-6 py-6">
+                                <div class="grid grid-cols-4 gap-6">
+                                    <div>
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-900">Copper Drinkware</h3>
+                                            <ul class="mt-2 space-y-2">
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 1</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 2</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-900">Yoga Mats</h3>
+                                            <ul class="mt-2 space-y-2">
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 1</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 2</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-900">Sadhana Essentials</h3>
+                                            <ul class="mt-2 space-y-2">
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 4</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 5</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 6</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-900">Yoga Clothing</h3>
+                                            <ul class="mt-2 space-y-2">
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 4</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 5</a>
+                                                </li>
+                                                <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 6</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900">Meditation Mats</h3>
+                                        <ul class="mt-2 space-y-2">
+                                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 7</a></li>
+                                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 8</a></li>
+                                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Item 9</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <img src="/frontend/src/assets/images/Yoga-Store-MM.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Books</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Clothing</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Idols (Murthi)</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Pooja Essential</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Kids</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home Collection</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Divine</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Eco-friendly</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Gifts</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="relative">
+                <button id="mobile-products-btn" class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200">
+                    Products ▼
+                </button>
+                <div id="mobile-products-dropdown" class="hidden bg-gray-100 ml-4">
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300">Yoga & Exercise</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300">Books</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300">Clothing</a>
+                </div>
+            </div>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">About</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact</a>
+        </div>
+
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const mobileProductsBtn = document.getElementById("mobile-products-btn");
+            const mobileProductsDropdown = document.getElementById("mobile-products-dropdown");
+
+            // Toggle Mobile Menu
+            mobileMenuBtn.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+
+                // Change the icon between ☰ and ✖
+                if (mobileMenu.classList.contains("hidden")) {
+                    mobileMenuBtn.textContent = "☰"; // Menu closed
+                } else {
+                    mobileMenuBtn.textContent = "✖"; // Menu open
+                }
+            });
+
+            // Toggle Mobile Products Dropdown
+            mobileProductsBtn.addEventListener("click", function () {
+                mobileProductsDropdown.classList.toggle("hidden");
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
